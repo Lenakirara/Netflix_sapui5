@@ -1,0 +1,30 @@
+<mvc:View controllerName="netflix.controller.Inicio"
+    xmlns:mvc="sap.ui.core.mvc" displayBlock="true"
+    xmlns:layout="sap.ui.layout"
+    xmlns="sap.m">
+    <Page id="page" title="Netflix com SAPUI5">
+        <subHeader>
+            <Toolbar>
+                <Link text="{ModelMenu>/first}" press="onPressLinkHome"/>
+                <Link text="{ModelMenu>/second}" press="onPressLinkSeries"/>
+                <SearchField class="search-container" id="inputSearch" search="onPressSearch">
+
+                </SearchField>
+            </Toolbar>
+        </subHeader>
+
+        <content>
+            <layout:Grid class="layout-container" content="{APISeries>/titles}">
+                <VBox class="box-container">
+                    <Image class="image-card" src="{APISeries>jawSummary/backgroundImage/url}"/>
+                    <Image class="image-logo" src="{APISeries>jawSummary/logoImage/url}"/>
+                    <Text class="text" text="{APISeries>jawSummary/title}"/>
+                    <Text class="text" text="{APISeries>jawSummary/numSeasonsLabel}"/>
+                    <Text class="text" text="{APISeries>jawSummary/synopsis}"/>
+                    <Text class="text" text="{APISeries>jawSummary/genres/1/name}"/>
+                    <Text class="text" text="{APISeries>jawSummary/genres/2/name}"/>
+                </VBox>
+            </layout:Grid>
+        </content>
+    </Page>
+</mvc:View>

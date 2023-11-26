@@ -1,0 +1,42 @@
+/* Enter your custom styles here */
+.layout-container {
+  background-color: #BEBEBE;
+}
+
+.image-card {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+.image-logo {
+  width: 150px;
+  height: 80px;
+  position: absolute; 
+  bottom: 80px;
+  left: 10px;
+}
+
+.box-container {
+  margin-top: 10px;
+  background-color: #000000;
+  gap: 5px;
+  border-radius: 5px;
+  height: 400px;
+}
+
+.text {
+  color: #FFFFFF;
+  padding: 5px;
+  text-align: left;
+}
+
+.search-container {
+  position: fixed;
+  right: 18%;
+  width: 20%;
+  border: 1px solid;
+  border-radius: 5px;
+  color:#C0C0C0;
+}
+
